@@ -1,3 +1,3 @@
-## Metrics Module
-- `src/metrics/impurity.py`: Gini impurity, entropy, weighted impurity, information gain
-- Supports `criterion="gini"` or `"entropy"` via `compute_impurity()`
+## Splitter Module
+- `src/tree/splitter.py`: `find_best_split()` — brute-force search for optimal feature/threshold
+- Enforces `min_samples_leaf`; returns `None` when no split improves gain
