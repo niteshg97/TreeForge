@@ -1,4 +1,3 @@
-## Evaluation & Pipeline
-- `src/model_selection/split.py`: seeded `train_test_split()`
-- `src/evaluation/metrics.py`: accuracy, precision, recall, F1, confusion matrix (binary/macro)
-- `src/pipeline/train.py`: runnable end-to-end script — `python -m src.pipeline.train`
+## Model Selection
+- `src/model_selection/cross_validation.py`: `k_fold_split()`, `cross_val_score()`
+- `src/model_selection/grid_search.py`: `GridSearchCV` — exhaustive hyperparameter search with CV
