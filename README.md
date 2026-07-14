@@ -58,7 +58,7 @@ python -m src.benchmark.compare
 ## Installation
 
 ```bash
-git clone https://github.com/<your-org>/TreeForge.git
+git clone https://github.com/niteshg97/TreeForge.git
 cd TreeForge
 pip install -e ".[dev]"
 ```
