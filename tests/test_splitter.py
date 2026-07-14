@@ -3,11 +3,8 @@
 import numpy as np
 import pytest
 
-from src.tree.splitter import (
-    find_best_split,
-    get_candidate_thresholds,
-    split_dataset,
-)
+from src.tree.splitter import (find_best_split, get_candidate_thresholds,
+                               split_dataset)
 
 
 def test_get_candidate_thresholds_basic() -> None:

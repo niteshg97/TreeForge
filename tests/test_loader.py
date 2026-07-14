@@ -6,12 +6,8 @@ import pandas as pd
 import pytest
 
 from src.config import COLUMN_NAMES
-from src.data.loader import (
-    encode_target,
-    load_and_process,
-    load_raw_data,
-    save_processed_data,
-)
+from src.data.loader import (encode_target, load_and_process, load_raw_data,
+                             save_processed_data)
 
 
 @pytest.fixture
@@ -50,9 +46,7 @@ def test_encode_target_invalid_label_raises(sample_raw_csv: Path) -> None:
         encode_target(df)
 
 
-def test_save_processed_data_writes_file(
-    sample_raw_csv: Path, tmp_path: Path
-) -> None:
+def test_save_processed_data_writes_file(sample_raw_csv: Path, tmp_path: Path) -> None:
     df = encode_target(load_raw_data(sample_raw_csv))
     output_path = tmp_path / "processed" / "out.csv"
     save_processed_data(df, output_path)

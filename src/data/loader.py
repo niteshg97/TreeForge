@@ -4,13 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.config import (
-    CLASS_MAPPING,
-    COLUMN_NAMES,
-    PROCESSED_DATA_PATH,
-    RAW_DATA_PATH,
-    TARGET_COLUMN,
-)
+from src.config import (CLASS_MAPPING, COLUMN_NAMES, PROCESSED_DATA_PATH,
+                        RAW_DATA_PATH, TARGET_COLUMN)
 
 
 def load_raw_data(raw_path: Path = RAW_DATA_PATH) -> pd.DataFrame:
@@ -81,4 +76,4 @@ def load_and_process(
     df = encode_target(df)
     if persist:
         save_processed_data(df, output_path)
-    return df 
+    return df

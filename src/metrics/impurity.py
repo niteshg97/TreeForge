@@ -99,10 +99,9 @@ def weighted_impurity(
         return 0.0
     left_weight = left_y.size / n_total
     right_weight = right_y.size / n_total
-    return (
-        left_weight * compute_impurity(left_y, criterion)
-        + right_weight * compute_impurity(right_y, criterion)
-    )
+    return left_weight * compute_impurity(
+        left_y, criterion
+    ) + right_weight * compute_impurity(right_y, criterion)
 
 
 def information_gain(
@@ -124,4 +123,4 @@ def information_gain(
     """
     parent_impurity = compute_impurity(parent_y, criterion)
     child_impurity = weighted_impurity(left_y, right_y, criterion)
-    return parent_impurity - child_impurity 
+    return parent_impurity - child_impurity

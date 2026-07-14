@@ -62,9 +62,7 @@ def _precision_recall_f1_per_class(
         precision = np.where(
             predicted_positives > 0, true_positives / predicted_positives, 0.0
         )
-        recall = np.where(
-            actual_positives > 0, true_positives / actual_positives, 0.0
-        )
+        recall = np.where(actual_positives > 0, true_positives / actual_positives, 0.0)
         f1 = np.where(
             (precision + recall) > 0,
             2 * precision * recall / (precision + recall),
@@ -131,9 +129,7 @@ def recall_score(
     return float(recall[-1])
 
 
-def f1_score(
-    y_true: np.ndarray, y_pred: np.ndarray, average: str = "binary"
-) -> float:
+def f1_score(y_true: np.ndarray, y_pred: np.ndarray, average: str = "binary") -> float:
     """Compute F1 score.
 
     Args:

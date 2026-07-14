@@ -3,14 +3,9 @@
 import numpy as np
 import pytest
 
-from src.metrics.impurity import (
-    class_probabilities,
-    compute_impurity,
-    entropy,
-    gini_impurity,
-    information_gain,
-    weighted_impurity,
-)
+from src.metrics.impurity import (class_probabilities, compute_impurity,
+                                  entropy, gini_impurity, information_gain,
+                                  weighted_impurity)
 
 
 def test_class_probabilities_empty() -> None:

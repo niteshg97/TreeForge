@@ -161,4 +161,4 @@ class DecisionTreeClassifier:
         """
         probas = self.predict_proba(X)
         class_indices = np.argmax(probas, axis=1)
-        return self.classes_[class_indices] 
+        return self.classes_[class_indices]

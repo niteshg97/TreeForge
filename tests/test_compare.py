@@ -2,12 +2,9 @@
 
 import numpy as np
 
-from src.benchmark.compare import (
-    BenchmarkResult,
-    _benchmark_sklearn,
-    _benchmark_treeforge,
-    format_comparison_table,
-)
+from src.benchmark.compare import (BenchmarkResult, _benchmark_sklearn,
+                                   _benchmark_treeforge,
+                                   format_comparison_table)
 
 
 def _separable_dataset() -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:

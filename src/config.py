@@ -9,8 +9,17 @@ PROCESSED_DATA_PATH: Path = (
 )
 
 COLUMN_NAMES: list[str] = [
-    "fLength", "fWidth", "fSize", "fConc", "fConc1",
-    "fAsym", "fM3Long", "fM3Trans", "fAlpha", "fDist", "class",
+    "fLength",
+    "fWidth",
+    "fSize",
+    "fConc",
+    "fConc1",
+    "fAsym",
+    "fM3Long",
+    "fM3Trans",
+    "fAlpha",
+    "fDist",
+    "class",
 ]
 
 TARGET_COLUMN: str = "class"

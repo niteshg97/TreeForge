@@ -1,17 +1,9 @@
 """End-to-end training pipeline: load data, train, evaluate, report."""
 
 from __future__ import annotations
-
-import numpy as np
-
 from src.data.loader import load_and_process
-from src.evaluation.metrics import (
-    accuracy_score,
-    confusion_matrix,
-    f1_score,
-    precision_score,
-    recall_score,
-)
+from src.evaluation.metrics import (accuracy_score, confusion_matrix, f1_score,
+                                    precision_score, recall_score)
 from src.model_selection.split import train_test_split
 from src.tree.classifier import DecisionTreeClassifier
 

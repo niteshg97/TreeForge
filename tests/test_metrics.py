@@ -3,13 +3,8 @@
 import numpy as np
 import pytest
 
-from src.evaluation.metrics import (
-    accuracy_score,
-    confusion_matrix,
-    f1_score,
-    precision_score,
-    recall_score,
-)
+from src.evaluation.metrics import (accuracy_score, confusion_matrix, f1_score,
+                                    precision_score, recall_score)
 
 
 def test_accuracy_score_perfect() -> None:

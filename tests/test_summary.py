@@ -3,11 +3,8 @@
 import pandas as pd
 import pytest
 
-from src.eda.summary import (
-    get_class_distribution,
-    get_correlation_matrix,
-    get_summary_statistics,
-)
+from src.eda.summary import (get_class_distribution, get_correlation_matrix,
+                             get_summary_statistics)
 
 
 @pytest.fixture

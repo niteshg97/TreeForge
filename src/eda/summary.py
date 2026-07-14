@@ -35,9 +35,7 @@ def get_class_distribution(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
     return pd.DataFrame({"count": counts, "proportion": proportions})
 
 
-def get_correlation_matrix(
-    df: pd.DataFrame, method: str = "pearson"
-) -> pd.DataFrame:
+def get_correlation_matrix(df: pd.DataFrame, method: str = "pearson") -> pd.DataFrame:
     """Compute pairwise correlation matrix for numeric columns.
 
     Args:

@@ -98,9 +98,7 @@ def find_best_split(
             ):
                 continue
 
-            gain = information_gain(
-                y, y[left_mask], y[right_mask], criterion=criterion
-            )
+            gain = information_gain(y, y[left_mask], y[right_mask], criterion=criterion)
 
             if gain > best_gain:
                 best_gain = gain
